@@ -7,6 +7,49 @@
     <title>Clase 05</title>
 </head>
 <body>
-    hola Mundo
+
+    <br>
+<form action="#" method="POST" target="_blank" enctype="multipart/form-data">
+<fieldset>
+    <legend> Informacion basica: </legend>
+<p><label>Nombre completo:  </label>   <input type="text" name="Nombre" placeholder="Nombre Completo" required /> </p>
+<p> <label> Fecha de nacimiento </label> <input type="date" name="fecha" value="2021-02-23" required /> </p>
+
+<p>
+    Genero:
+    <label> <input type="radio" name="genero" value="masuculino" checked /> Masculino </label>
+    <label> <input type="radio" name="genero" value="femenino"  /> Femenino </label>
+</p>
+<p>Numero telefonico: <input type="tel" name="telefono"  required/></p>
+<p>Correo: <input type="email" name="correo"  required/></p>
+</fieldset>
+<fieldset>
+    <legend>Informacion extra:</legend>
+
+<p>
+Intereses:
+    <label> <input type="checkbox" name="libro"> Libros </label>
+    <label> <input type="checkbox" name="pelicula" checked> Peliculas </label>
+    <label> <input type="checkbox" name="Videojuegos"> Videojuegos </label>
+</p>
+
+<p> Color favorito: <input type="color" name="ColorFavorito"/> </p>
+<p> Archivo: <input type="file" name="archivo" /> </p>
+</fieldset>
+<br>
+<input type="submit" value="Enviar datos"/>
+<input type="reset" value="Restaurar Formulario"/>
+</form>
+
+<div id="texto">
+HOla mundo
+
+</div>
+
+<input type="button" onclick="loadAjax()" value="Cambiar Contenido"/>
+
+<button onclick="loadAjax()">Cambiar Contenido</button>
+
+<script src="script/ajax.js"></script> 
 </body>
 </html>
